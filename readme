@@ -6,3 +6,16 @@ LCoder 'file_in' 'file_out' <'-c' coder or '-d' decoder> 'KEY'
 
 If the output file is '0' when encoding,
 then a default file (file_in + '.sec') will be created.
+
+If the decoding 'file_out'= '0', name taken from the extension.
+file_out = file_in - '.sec'
+In case of a non-standard name,
+the program will report an error and
+prompt you to enter the file again
+
+The KEY must be a multiple of 24 characters
+and must be between 24 and 120 characters long
+
+When encoding is possible to set the encoding level from 1 to 5.
+When called from the command line, you can enter 1 to 5 instead 
+of a 'KEY' to automatically generate the key
