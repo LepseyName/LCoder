@@ -1,0 +1,8 @@
+# ================Instruction==================
+
+LCoder can work in the console with or without
+an interface if the program call was:
+LCoder 'file_in' 'file_out' <'-c' coder or '-d' decoder> 'KEY'
+
+If the output file is '0' when encoding,
+then a default file (file_in + '.sec') will be created.
